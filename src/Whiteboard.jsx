@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { io } from "socket.io-client";
 import "./Whiteboard.css";
 
-const socket = io();
+const socket = io("https://whiteboard-app-1-ak6g.onrender.com");
 
 const Whiteboard = () => {
   const canvasRef = useRef(null);
